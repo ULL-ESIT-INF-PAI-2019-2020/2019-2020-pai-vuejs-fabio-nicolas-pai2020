@@ -4,9 +4,9 @@
 
 ## Desarrolladores: 
 Fabio Bianchini Cano
-alu0101040929@ull.edu.es
+alu0101040929@ull.edu.es:
 
 
-José Nicolás Cabrera Domínguez
+José Nicolás Cabrera Domínguez:
 nicolas.cabrera.14@ull.edu.es
 
