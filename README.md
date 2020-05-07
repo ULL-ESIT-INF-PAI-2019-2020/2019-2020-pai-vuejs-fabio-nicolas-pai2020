@@ -1,15 +1,12 @@
-# PAI Lab assignment (lab, class presentation with slides) structure
+# Exposición Vue.js PAI 2019 2020
 
-This directory is organised as follows:
+> Repositorio del trabajo de exposición tratado sobre el framework Vue.js para la asignatura Programación de Aplicaciones Interactivas.
 
-      .
-      ├── coverage   # Code coverage reports files
-      ├── docs       # All kind of project documentation, including JSDoc files
-      ├── image      # Image resources 
-      ├── tests      # Source code for tests
-      ├── src        # Source code, including JS, CSS, HTML
+## Desarrolladores: 
+Fabio Bianchini Cano
+alu0101040929@ull.edu.es
 
-For each assignment there should be a markdown file with the assignment description.
-Find that file and follow the instructions on it.
 
-**Before** the evaluation session of the assignment, **do not forget** to upload the (git) link to your repository to the Moodle classroom.
+José Nicolás Cabrera Domínguez
+nicolas.cabrera.14@ull.edu.es
+
