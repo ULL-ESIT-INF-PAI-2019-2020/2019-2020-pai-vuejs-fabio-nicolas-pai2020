@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head lang="en">
+  <meta charset="UTF-8" />
+  <title>Components Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+  <h1>Components Tutorial</h1>
+  <h2>Example 01</h2>
+  <div class="app">
+    <click-counter></click-counter>
+    <click-counter></click-counter>
+    <click-counter></click-counter>
+    <click-counter></click-counter>
+  </div>
+
+  <!-- Template MUST return a single root element. To solve this easily,
+       we can just encapsulate everything into a div element -->
+  <script type="text/x-template" id="click-counter-template">
+    <div id="template-counter">
+      <p>The count is:</p>
+      <button @click="count++">{{ count }}</button>
+    </div>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>

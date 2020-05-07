@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head lang="es">
+  <meta charset="UTF-8" />
+  <title>Components Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <div class="nav-bar"></div>
+</head>
+<body>
+  <h1>Components Tutorial</h1>
+  <h2>Example 04</h2>
+  <h3>Local Components</h3>
+
+  <div id="app">
+    <plan-picker></plan-picker>
+
+    <!-- The next will get you an error, that's because 'plan'
+         is now local to plan-picker. Due to this, it can only
+         be instantiated inside the template for plan-picker. -->
+    <!-- <plan name="Ciudad de México"></plan> -->
+
+  </div>
+
+  <script type="text/x-template" id="plan-template">
+    <div class="plan">
+      <div class="description">
+        <span class="title">
+          {{ name }}
+        </span>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/x-template" id="plan-picker-template">
+    <div class="plans">
+      <plan v-for="plan in plans" :name="plan.city" :key="plan.id"></plan>
+    </div>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
