@@ -3,8 +3,8 @@
 > Repositorio del trabajo de exposición tratado sobre el framework Vue.js para la asignatura Programación de Aplicaciones Interactivas.
 
 ## Desarrolladores: 
-Fabio Bianchini Cano
-alu0101040929@ull.edu.es:
+Fabio Bianchini Cano:
+alu0101040929@ull.edu.es
 
 
 José Nicolás Cabrera Domínguez:
