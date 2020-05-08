@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Vue.js</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <h1> {{subject}} </h1>
+    <h1>Assingnment {{assingnmentNo}}: {{assingment}} </h1>
+    <div v-for="grade in grades">
+      <ul>
+        <li :class="[grade.grade > 8 ? 'great' : 'notGreat']">{{grade.name}}: {{grade.grade}}</li>
+        <button v-on:click="grade.grade++">+ 1</button>
+        <button v-on:click="grade.grade--">- 1</button>
+      </ul>
+    </div>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="vue.js"></script>

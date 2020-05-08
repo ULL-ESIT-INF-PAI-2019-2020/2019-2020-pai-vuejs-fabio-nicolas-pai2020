@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head lang="es">
+  <meta charset = "UTF-8">
+  <title>Life Cycle</title>
+  <link rel = "stylesheet"
+    type = "text/css"
+    href = "style.css" />
+</head>
+<body>
+  <br><br>
+  <div class="life-cycle" v-bind:style="styleObject">
+    <h2> {{ greeting }} </h2>
+    <h3> Change the example values below and check the logs in the console! </h3>
+    <div class="example">
+      <div v-for="attr of exampleAttributes"> {{ attr }} </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>                       
+<script src="life-cycle.js"></script>

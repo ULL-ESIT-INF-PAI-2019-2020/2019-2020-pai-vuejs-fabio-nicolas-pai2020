@@ -1,0 +1,14 @@
+@font-face {
+  font-family: nunito;
+  src: url(nunitofont/Nunito-Regular.ttf);
+}
+
+* {
+  font-family: nunito;
+}
+
+.life-cycle > .example {
+  display: flex;
+  justify-content: space-around;
+}
+
