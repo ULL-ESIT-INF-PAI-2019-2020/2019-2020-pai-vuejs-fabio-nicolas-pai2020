@@ -10,11 +10,12 @@
   <div id="app">
     <h1> {{subject}} </h1>
     <h1>Assingnment {{assingnmentNo}}: {{assingment}} </h1>
-    <div v-for="grade in grades">
+    <div>
       <ul>
-        <li :class="[grade.grade > 8 ? 'great' : 'notGreat']">{{grade.name}}: {{grade.grade}}</li>
-        <button v-on:click="grade.grade++">+ 1</button>
-        <button v-on:click="grade.grade--">- 1</button>
+        <li v-for="grade in grades" :class="[grade.grade > 8 ? 'great' : 'notGreat']" >{{grade.name}}: {{grade.grade}}
+          <button v-on:click="grade.grade++">+ 1</button>
+          <button @click="grade.grade--">- 1</button>
+        </li>
       </ul>
     </div>
   </div>

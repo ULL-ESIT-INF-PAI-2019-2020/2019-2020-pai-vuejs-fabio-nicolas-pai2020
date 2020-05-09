@@ -18,5 +18,14 @@ let app = new Vue({
         grade: '9'
       }
     ]
-  }
+  },
+  methods: {
+    addGrade(grade) {
+      if (grade.grade < 10)
+        grade.grade++;
+    },
+    subGrade(grade) {
+      grade.grade--;
+    },
+  },
 })
