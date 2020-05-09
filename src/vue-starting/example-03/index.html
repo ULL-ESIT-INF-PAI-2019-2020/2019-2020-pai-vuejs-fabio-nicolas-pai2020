@@ -10,9 +10,9 @@
   <div id="app">
     <h1> {{subject}} </h1>
     <h1>Assingnment {{assingnmentNo}}: {{assingment}} </h1>
-    <div v-for="grade in grades">
+    <div>
       <ul>
-        <li>{{grade.name}}: {{grade.grade}}</li>
+        <li  v-for="grade in grades">{{grade.name}}: {{grade.grade}}</li>
       </ul>
     </div>
   </div>
