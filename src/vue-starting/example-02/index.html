@@ -11,16 +11,10 @@
     <div v-bind:class="[grade > 8 ? 'great' : 'notGreat']">
       <h1> {{subject}} </h1>
       <h1>Assingnment {{assingnmentNo}}: {{assingment}} </h1>
-      <h2>Grade: {{grade}}</h2>
+      <h2 v-if="!skipped">Grade: {{grade}}</h2>
     </div>
   </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>                       
 <script src="vue.js"></script>
-
-
-
-<!-- Para enseñar los condicionales, cambiar 
-<h2>Grade: {{grade}}</h2> por <h2 v-if="!skipped">Grade: {{grade}}</h2>
-Después cambiarlo a v-show y explicar que es más eficiente -->
