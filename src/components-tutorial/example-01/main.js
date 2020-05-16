@@ -17,7 +17,7 @@
  *                   07/05/2020 - Creation (first version) of the code.
  */
 
- Vue.component("click-counter", {
+Vue.component("click-counter", {
   template: "#click-counter-template",
   data() {
     return {
