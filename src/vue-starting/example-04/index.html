@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Vue.js</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script defer async src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script defer async src="vue.js"></script>
 </head>
 
 <body>
@@ -12,15 +14,12 @@
     <h1>Assingnment {{assingnmentNo}}: {{assingment}} </h1>
     <div>
       <ul>
-        <li v-for="grade in grades" :class="[grade.grade > 8 ? 'great' : 'notGreat']" >{{grade.name}}: {{grade.grade}}
+        <li v-for="grade in grades" :class="[grade.grade > 8 ? 'great' : 'notGreat']">{{grade.name}}: {{grade.grade}}
           <!-- Change this logic to methods, and see that it works the same! -->
-          <button v-on:click="grade.grade++">+ 1</button>
-          <button @click="grade.grade--">- 1</button>
+          <button v-on:click="addGrade(grade)">+ 1</button>
+          <button @click="subGrade(grade)">- 1</button>
         </li>
       </ul>
     </div>
   </div>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-<script src="vue.js"></script>

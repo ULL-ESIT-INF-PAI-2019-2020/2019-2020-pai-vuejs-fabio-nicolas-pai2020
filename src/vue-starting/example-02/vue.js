@@ -5,5 +5,6 @@ let app = new Vue({
     assingnmentNo: '01',
     assingment: 'Eight Queens Algorithm',
     grade: '9',
+    skipped: true
   }
 })
