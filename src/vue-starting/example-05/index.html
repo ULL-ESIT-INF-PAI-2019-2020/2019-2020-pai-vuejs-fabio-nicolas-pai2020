@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Vue.js</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script defer async src="vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1 class="title is-1"> {{subject}} </h1>
+    <h1 class="title is-2">Assingnment {{assingnmentNo}}: {{assingment}} </h1>
+    <div>
+      <ul style="background-color: grey;">
+        <div v-for="grade in grades">
+          <li :class = "[grade.grade > 8 ? 'has-text-success' : grade.grade > 4 ? 'has-text-warning' : 'has-text-danger']">{{grade.name}}: {{grade.grade}}</li>
+            <button v-on:click="grade.grade++">+ 1</button>
+            <button @click="grade.grade--">- 1</button>
+            <!-- Change this logic to methods, and see that it works the same! -->
+        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
