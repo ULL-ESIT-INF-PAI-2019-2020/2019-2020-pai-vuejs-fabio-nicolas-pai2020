@@ -16,8 +16,8 @@
       <ul>
         <li v-for="grade in grades" :class="[grade.grade > 8 ? 'great' : 'notGreat']">{{grade.name}}: {{grade.grade}}
           <!-- Change this logic to methods, and see that it works the same! -->
-          <button v-on:click="addGrade(grade)">+ 1</button>
-          <button @click="subGrade(grade)">- 1</button>
+          <button v-on:click="grade.grade++">+ 1</button>
+          <button @click="grade.grade--">- 1</button>
         </li>
       </ul>
     </div>
