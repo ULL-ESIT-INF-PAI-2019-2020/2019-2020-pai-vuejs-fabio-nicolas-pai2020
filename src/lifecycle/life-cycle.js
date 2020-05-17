@@ -6,12 +6,6 @@ let lifeCycle = new Vue({
     greeting: `This Vue object is going to
       explain how the life cycle of Vue works.`,
     exampleAttributes: [1, 'example', 12 + 45],
-    anotherExamples: {
-      a: 1,
-      b: 2,
-      c: 3,
-    },
-
     styleObject: {
       textAlign: "center",
     },

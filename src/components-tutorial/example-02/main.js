@@ -30,6 +30,14 @@ Vue.component("plan", {
 new Vue({
   el: "#app",
   data: {
-    plans: ["Buenos Aires", "El Salvador", "Maracaibo"],
-  }
+    plans: [
+      "Buenos Aires",
+      "El Salvador",
+      "Maracaibo",
+      "Santiago",
+      "Caracas",
+      "Lima",
+      "Bogotá",
+    ],
+  },
 });
